@@ -106,3 +106,70 @@ header.scroll {
         transform: translateX(0);
     }
 }
+#top-title{
+  position:relative;
+  top:70px;
+  font-size:50px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  z-index:3;
+  text-align: center;
+}
+.hero{
+  position: relative;
+  height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#f8f3ee;
+  overflow:hidden;
+  margin-top: -100px;
+}
+
+
+.bg-text{
+  position:absolute;
+  font-size: 160px;
+  color:rgba(0,0,0,0.05); 
+  z-index:1;
+  text-align:center;
+  letter-spacing: 20px;
+  word-spacing: 100px;
+}
+
+
+.images{
+  position:relative;
+  z-index:2;
+}
+
+.img{
+  position:absolute;
+  border-radius:15px;
+}
+
+
+.main{
+  width:300px;
+  position:relative;
+  transform:rotate(15deg);
+}
+
+
+.small{
+  width:140px;
+}
+
+
+.left{
+  top:250px;
+  left:-70vh;
+  transform:rotate(-15deg);
+}
+
+
+.right{
+  top:10px;
+  right:-70vh;
+  transform:rotate(20deg);
+}
