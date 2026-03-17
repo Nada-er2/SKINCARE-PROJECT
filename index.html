@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project 1</title>
+</head>
+<body>
+  <header>
+    <ul class="menu">
+        <li><a href="#section-product">product</a></li>
+        <li><a href="#section-aboutus">about</a></li>
+        <li id="li_title"><a href="#section-acceuil">softcare</a></li>
+        <li><a href="#">review</a></li>
+        <li><a href="#">blog</a></li>
+        <li id="li_contact"><a href="#">contact us</a></li>
+        
+    </ul>
+  </header>
+  <main>
+    <section id="section-acceuil">
+        <img src="images/accueil_img.png" alt="accueil_img">
+        <div>
+            <p>SCIENCE-DRIVEN</p>
+            <p>SKINCARE TAILORED</p>
+            <p>JUST FOR YOU</p>
+        </div>
+        <h1>SOFTCARE SKIN</h1>
+    </section>
+    <section id="section-aboutus">
+        <h1>WIIN OUR FORMULAS</h1>
+        <h1>REAL FOR SKINCARE</h1>
+        <div>
+            <img src="images/about_img.png" alt="about_img1">
+            <img src="images/about_img.png" alt="about_img2">
+            <img src="images/about_img.png" alt="about_img3">
+        </div>
+    </section>
+    <section id="section-product">
+        <h1 >LOVED BY REAL SKIN</h1>
+        <div>
+            <div>
+                <img src="images/product_img.png" alt="product_img">
+                    <h4>TITALE 1</h4>
+                    <p>DESCRIPTION</p>
+                    <div>
+                        <p>200DH</p>
+                        <img src="" alt="icon">
+                    </div>
+                </img>
+            </div>
+            <div>
+                <img src="images/product_img.png" alt="product_img">
+                    <h4>TITALE 2</h4>
+                    <p>DESCRIPTION</p>
+                    <div>
+                        <p>3009DH</p>
+                        <img src="" alt="icon">
+                    </div>
+                </img>
+            </div>
+            <div>
+                <img src="images/product_img.png" alt="product_img">
+                    <h4>TITALE 3</h4>
+                    <p>DESCRIPTION</p>
+                    <div>
+                        <p>200DH</p>
+                        <img src="" alt="icon">
+                    </div>
+                </img>
+            </div>
+        </div>
+    </section>
+  </main>
+  <script>
+window.addEventListener("scroll", function(){
+  const header = document.querySelector("header");
+
+  if(window.scrollY > 50){
+    header.classList.add("scroll");
+  } else {
+    header.classList.remove("scroll");
+  }
+});
+</script>
+
+</body>
+</html>

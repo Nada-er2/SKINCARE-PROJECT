@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:#F8F3EE;
+    margin:0 50px;
+    border-radius: 25px;
+    position:fixed;
+    top:20px;
+    left:0;
+    right:0;
+    z-index:1000;
+    transition:0.3s;
+    
+}
+header.scroll{
+    background-color:rgba(248,243,238,0.5);
+    backdrop-filter: blur(6px);
+}
+header.scroll {
+    top:0px;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+     
+    
+}
+#li_title{
+    padding: 0 20%;
+    text-transform: uppercase;
+    font-family: "Bevan", serif;
+    font-weight: 400;
+    
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color:#0E1C21 ;
+    text-transform: capitalize;
+    font-size: large; 
+}
+#li_contact{
+    background-color:#FDFD1A;
+    border-radius: 25px;
+    padding: 1% 2%;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    margin-right: -100px;
+}
+.menu li a:hover{
+    color:#662919;
+    text-decoration: #662919 underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+
+
+}
+#li_contact:hover{
+    background-color: #DADA00;
+    color: black;
+}
