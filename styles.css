@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+:root{
+    --primary-color: #FDFD1A;
+    --secondary-color: #0E1C21;
+    --accent-color: #662919;
+    --cart-color:#F8F3EE;
+}
 body{
     margin: 0;
     padding: 0;
 }
 header{
-    background-color:#F8F3EE;
+    background-color:var(--cart-color);
     margin:0 50px;
     border-radius: 25px;
     position:fixed;
@@ -40,21 +47,21 @@ header.scroll {
 }
 .menu li a{
     text-decoration: none;
-    color:#0E1C21 ;
+    color:var(--secondary-color); ;
     text-transform: capitalize;
     font-size: large; 
 }
 #li_contact{
-    background-color:#FDFD1A;
+    background-color:var(--primary-color);
     border-radius: 25px;
     padding: 1% 2%;
     margin-top: -15px;
     margin-bottom: -15px;
-    margin-right: -100px;
+    margin-right: -68.8px;
 }
 .menu li a:hover{
-    color:#662919;
-    text-decoration: #662919 underline;
+    color:var(--accent-color);
+    text-decoration: var(--accent-color) underline;
     text-underline-offset: 5px;
     text-decoration-thickness: 2px;
 
@@ -63,4 +70,39 @@ header.scroll {
 #li_contact:hover{
     background-color: #DADA00;
     color: black;
+}
+#section-acceuil{
+    background-image:url(images/accueil_img.png);
+    height: 100vh;
+    background-size: cover;
+    
+}
+#acceuil_parag{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    color: #0E1C21;
+    text-align: left;
+    font-size: 2em;
+    
+}
+#acceuil_title{
+    position: absolute;
+    top: 53%;
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200px;
+    padding-left: 30px;
+    color: var(--primary-color); 
+    animation: slide 3s ease-out; 
+}
+@keyframes slide{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
