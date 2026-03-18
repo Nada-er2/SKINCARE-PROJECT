@@ -9,18 +9,7 @@
         }
       });
 
-      const container = document.querySelector(".blog_cards");
-
-      let scrollAmount = 0;
-
-      function autoScroll() {
-        scrollAmount += 1;
-        container.scrollLeft = scrollAmount;
-
-        if (scrollAmount >= container.scrollWidth - container.clientWidth) {
-          scrollAmount = 0; 
-        }
-      }
+      
 
       setInterval(autoScroll, 20);
       const container2 = document.querySelector(".reviews_container");
@@ -60,4 +49,8 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+function toggleMenu() {
+  document.querySelector(".menu").classList.toggle("active");
+}
 
